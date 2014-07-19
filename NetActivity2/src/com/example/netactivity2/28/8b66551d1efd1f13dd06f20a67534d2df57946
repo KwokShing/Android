@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--><web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <!-- ======================== Introduction ============================== -->
+  <!-- This document defines default values for *all* web applications      -->
+  <!-- loaded into this instance of Tomcat.  As each application is         -->
+  <!-- deployed, this file is processed, followed by the                    -->
+  <!-- "/WEB-INF/web.xml" deployment descriptor from your own               -->
+  <!-- applications.                                                        -->
+  <!--                                                                      -->
+  <!-- WARNING:  Do not configure application-specific resources here!      -->
+  <!-- They should go in the "/WEB-INF/web.xml" file in your application.   -->
+
+
+  <!-- ================== Built In Servlet Definitions ==================== -->
+
+
+  <!-- The default servlet for all web applications, that serves static     -->
+  <!-- resources.  It processes all requests that are not mapped to other   -->
+  <!-- servlets with servlet mappings (defined either here or in your own   -->
+  <!-- web.xml file).  This servlet supports the following initialization   -->
+  <!-- parameters (default values are in square brackets):                  -->
+  <!--                                                                      -->
+  <!--   debug               Debugging detail level for messages logged     -->
+  <!--                       by this servlet.  [0]                          -->
+  <!--                                                                      -->
+  <!--   fileEncoding        Encoding to be used to read static resources   -->
+  <!--                       [platform default]                             -->
+  <!--                                                                      -->
+  <!--   input               Input buffer size (in bytes) when reading      -->
+  <!--                       resources to be served.  [2048]                -->
+  <!--                                                                      -->
+  <!--   listings            Should directory listings be produced if there -->
+  <!--                       is no welcome file in this directory?  [false] -->
+  <!--                       WARNING: Listings for directories with many    -->
+  <!--                       entries can be slow and may consume            -->
+  <!--                       significant proportions of server resources.   -->
+  <!--                                                                      -->
+  <!--   output              Output buffer size (in bytes) when writing     -->
+  <!--                       resources to be served.  [2048]                -->
+  <!--                                                                      -->
+  <!--   readonly            Is this context "read only", so HTTP           -->
+  <!--                       commands like PUT and DELETE are               -->
+  <!--                       rejected?  [true]                              -->
+  <!--                                                                      -->
+  <!--   readmeFile          File to display together with the directory    -->
+  <!--                       contents. [null]                               -->
+  <!--                                                                      -->
+  <!--   sendfileSize        If the connector used supports sendfile, this  -->
+  <!--                       represents the minimal file size in KB for     -->
+  <!--                       which sendfile will be used. Use a negative    -->
+  <!--                       value to always disable sendfile.  [48]        -->
+  <!--                                                                      -->
+  <!--   useAcceptRanges     Should the Accept-Ranges header be included    -->
+  <!--                       in responses where appropriate? [true]         -->
+  <!--                                                                      -->
+  <!--  For directory listing customization. Checks localXsltFile, then     -->
+  <!--  globalXsltFile, then defaults to original behavior.                 -->
+  <!--                                                                      -->
+  <!--   localXsltFile       Make directory listings an XML doc and         -->
+  <!--                       pass the result to this style sheet residing   -->
+  <!--                       in that directory. This overrides              -->
+  <!--                       contextXsltFile and globalXsltFile[null]       -->
+  <!--                                                                      -->
+  <!--   contextXsltFile     Make directory listings an XML doc and         -->
+  <!--                       pass the result to this style sheet which is   -->
+  <!--                       relative to the context root. This overrides   -->
+  <!--                       globalXsltFile[null]                           -->
+  <!--                                                                      -->
+  <!--   globalXsltFile      Site wide configuration version of             -->
+  <!--                       localXsltFile This argument is expected        -->
+  <!--                       to be a physical file. [null]                  -->
+  <!--                                                                      -->
+  <!--                                                                      -->
+
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+
+  <!-- The JSP page compiler and execution servlet, which is the mechanism  -->
+  <!-- used by Tomcat to support JSP pages.  Traditionally, this servlet    -->
+  <!-- is mapped to the URL pattern "*.jsp".  This servlet supports the     -->
+  <!-- following initialization parameters (default values are in square    -->
+  <!-- brackets):                                                           -->
+  <!--                                                                      -->
+  <!--   checkInterval       If development is false and checkInterval is   -->
+  <!--                       greater than zero, background compilations are -->
+  <!--                       enabled. checkInterval is the time in seconds  -->
+  <!--                       between checks to see if 

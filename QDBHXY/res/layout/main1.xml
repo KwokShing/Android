@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期一" 
+            android:id="@+id/button1"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期二"
+            android:id="@+id/button2" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期三" 
+            android:id="@+id/button3"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期四" 
+            android:id="@+id/button4"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期五" 
+            android:id="@+id/button5"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="星期六" 
+            android:id="@+id/button1"
+            />
+    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">netimage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="imagepath">网络图片路径</string>
+    <string name="button">查看</string>
+    <string name="failure">查看失败</string>
+    <string name="site">http://www.baidu.com/img/bdlogo.gif</string>
+
+
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="星期一"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:id="@+id/title"/>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_margin="10dp">
+	<TextView 
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:text="节数"
+	    android:id="@+id/text1title"
+	    />
+
+    <TextView
+        android:id="@+id/text2title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text1title"
+        android:layout_alignTop="@id/text1title"
+        android:text="课程" />
+
+    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   android:layout_toRightOf="@id/text2title"
+        android:layout_alignTop="@id/text2title"
+	    android:text="时间"
+	    android:id="@+id/text3title"
+	    />
+	    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   android:layout_toRightOf="@id/text3title"
+        android:layout_alignTop="@id/text3title"
+	    android:text="地点"
+	    android:id="@+id/text4title"
+	    />
+	     <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	   android:layout_toRightOf="@id/text4title"
+        android:layout_alignTop="@id/text4title"
+	    android:text="教师"
+	    android:id="@+id/text5title"
+	    />
+	    
+
+</RelativeLayout>
+    <ListView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:id="@+id/list"></ListView>
+
+</LinearLayout>

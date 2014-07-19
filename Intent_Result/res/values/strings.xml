@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intent_Result</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="first">Activity1</string>
+    <string name="second">Activity2</string>
+    <string name="first_text">这是第一个Activity</string>
+    <string name="first_btn">点击跳转到第二个activity</string>
+    <string name="second_btn">点击返回第一个Activity</string>
+    <string name="second_edit">这里输入返回值</string>
+
+</resources>

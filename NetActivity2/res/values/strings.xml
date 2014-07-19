@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NetActivity2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello World, NetActivity!</string>
+    <string name="picaddress">图片地址</string>
+    <string name="look">查看</string>
+    <string name="error">网络连接异常</string>
+
+</resources>

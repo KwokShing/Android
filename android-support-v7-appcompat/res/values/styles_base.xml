@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!-- Like in themes_base.xml, the namespace "*.AppCompat.Base" is used to
+         define base styles for the platform version. The "*.AppCompat"
+         variants are for direct use or use as parent styles by the app. -->
+    <eat-comment/>
+
+    <style name="Widget.AppCompat.Base.ActionBar" parent="">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="homeLayout">@layout/abc_action_bar_home</item>
+
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle
+        </item>
+
+        <item name="background">@drawable/abc_ab_transparent_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_transparent_dark_holo</item>
+
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+
+        <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ActionBar" parent="Widget.AppCompat.Base.ActionBar">
+        <item name="background">@drawable/abc_ab_transparent_light_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_light_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_transparent_light_holo</item>
+
+        <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow
+        </item>
+
+        <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.ActionBar.Solid" parent="Widget.AppCompat.Base.ActionBar">
+        <item name="background">@drawable/abc_ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_dark_holo</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid"
+           parent="Widget.AppCompat.Light.Base.ActionBar">
+        <item name="background">@drawable/abc_ab_solid_light_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_light_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_light_holo</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse"
+           parent="Widget.AppCompat.Base.ActionBar.Solid">
+        <item name="titleTextStyle">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse
+        </item>
+        <item name="subtitleTextStyle">
+            @style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse
+        </item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="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                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     name="Widget.AppCompat.Base.DropDownItem.Spinner" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem
+        </item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.DropDownItem.Spinner"
+           parent="Widget.AppCompat.Base.DropDownItem.Spinner">
+    </style>
+
+    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ListView.DropDown"
+           parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/abc_list_selector_holo_light</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem"
+           parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
+    </style>
+
+    <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item"
+           parent="android:TextAppearance.Medium">
+        <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
+    </style>
+
+    <!-- Mimic text appearance in select_dialog_item.xml -->
+    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog"
+           parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.ListView.Menu" parent="android:Widget.ListView.Menu">
+        <item name="android:listSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:divider">?attr/dividerHorizontal</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.ListPopupWindow" parent="">
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ListPopupWindow" parent="">
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.PopupMenu"
+           parent="@style/Widget.AppCompat.Base.ListPopupWindow">
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.PopupMenu"
+           parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large"
+           parent="android:TextAppearance.Widget">
+        <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small"
+           parent="android:TextAppearance.Widget">
+        <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large"
+           parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small"
+           parent="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small">
+    </style>
+
+    <style name="TextAppearance.AppCompat.Base.SearchResult" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult"
+           parent="TextAppearance.AppCompat.Base.SearchResult">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView"
+           parent="android:Widget.AutoCompleteTextView">
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView"
+           parent="android:Widget.AutoCompleteTextView">
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.ActivityChooserView" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abc_ab_share_pack_holo_dark</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="showDividers">middle</item>
+        <item name="dividerPadding">6dip</item>
+    </style>
+
+    <style name="Widget.AppCompat.Light.Base.ActivityChooserView"
+           parent="Widget.AppCompat.Base.ActivityChooserView">
+        <item name="android:background">@drawable/abc_ab_share_pack_holo_light</item>
+    </style>
+
+</resources>

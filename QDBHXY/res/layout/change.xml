@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:layout_margin="10dp">
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程：" />
+            <EditText 
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="无"
+                android:id="@+id/what"/>
+        </TableRow>
+        <TableRow >
+            <TextView />
+            <LinearLayout >
+            <Button 
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:text="保存"/>
+            <Button 
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel"
+                android:text="取消"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

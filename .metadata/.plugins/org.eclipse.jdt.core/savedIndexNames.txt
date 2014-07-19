@@ -1,0 +1,26 @@
+INDEX VERSION 1.126+C:\Users\Chan\Documents\GitHub\Android\.metadata\.plugins\org.eclipse.jdt.core
+3369026407.index
+2622310600.index
+1846040477.index
+789919933.index
+2991841982.index
+1074751046.index
+956122849.index
+2270868195.index
+1659393603.index
+2043727593.index
+1927482307.index
+4247571346.index
+2905908203.index
+2929635513.index
+1016566093.index
+1657330681.index
+175856638.index
+3539156789.index
+361526579.index
+1443175513.index
+1022954404.index
+221482468.index
+2452213987.index
+3515282563.index
+90682577.index

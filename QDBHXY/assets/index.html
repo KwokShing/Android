@@ -1,0 +1,58 @@
+<html> 
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<title>Insert title here</title>  
+<script type="text/javascript">  
+ function show(jsondata){  
+	            var jsonobjs = eval(jsondata);//json字符串转换为json对象  
+            	var table = document.getElementById("personTable");  
+           	 for(var y=0; y<jsonobjs.length; y++){  
+             var tr = table.insertRow(table.rows.length); //添加一行  
+	                //添加8列  
+	                var td1 = tr.insertCell(0);  
+              	 	 var td2 = tr.insertCell(1);  
+	                td2.align = "center";  
+	                var td3 = tr.insertCell(2);  
+	                td3.align = "center";  
+	                var td4 = tr.insertCell(0);  
+                	var td5 = tr.insertCell(1);  
+	                td5.align = "center";  
+	                var td6 = tr.insertCell(2);  
+	                td6.align = "center";  
+	                var td7 = tr.insertCell(0);  
+              	 	 var td8 = tr.insertCell(1);  
+	                td8.align = "center";  
+	                //设置列内容和属性  
+	                td1.innerHTML = y+1;   
+	                td2.innerHTML = jsonobjs[y].skdd;
+	                td3.innerHTML = jsonobjs[y].bjmc;   
+	                td4.innerHTML = jsonobjs[y].sksj;
+	                 td5.innerHTML = jsonobjs[y].sksj;   
+	                 td6.innerHTML = jsonobjs[y].skdd;
+	                 td7.innerHTML = jsonobjs[y].bjmc;   
+	                td8.innerHTML = jsonobjs[y].bjmc;      
+	            }  
+	    }  
+	</script>  
+
+</head>  
+<!-- js代码通过webView调用其插件中的java代码 -->  
+<body onload="javascript:contact.getContacts()">  
+ <table border="1" width="100%" id="personTable" cellspacing="0">  
+	 <tr>
+	 <td>时间</td>
+	 <td>时间</td>
+      <td>星期一</td>
+      <td>星期二</td>
+	 <td>星期三</td>
+	  <td>星期四</td>
+	 <td>星期五</td>
+	 <td>星期六</td>
+     </tr>
+     
+</table>  
+ <a href="javascript:window.location.reload()">刷新</a>  
+</body>  
+</html> 
+
+    
